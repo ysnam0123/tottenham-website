@@ -1,0 +1,106 @@
+/* ----------헤더---------- */
+header {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 10px;
+  background-color: #232e52;
+  height: 20px;
+  border-bottom: #688fd0 solid 1px;
+}
+
+header a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: small;
+}
+
+header a:hover {
+  color: #e6bd66;
+}
+
+#tottenham {
+  margin-right: auto;
+  font-size: large;
+  color: #d2d4d3;
+  font-weight: 500;
+}
+
+#logo {
+  text-align: center;
+}
+#logo img {
+  height: 100px;
+  width: auto;
+}
+/* -------------------------- */
+
+/* --------- 로그인 박스 ---------- */
+
+#loginbox {
+  background-color: #ffffff;
+  height: 800px;
+  margin-top: 0;
+  text-align: center;
+}
+#loginbox input {
+  width: 20%;
+  height: 50px;
+  border: 1px solid #232e52;
+}
+/* ID 입력 상자 */
+#userid {
+  margin-top: 30px;
+  border-top-left-radius: 10px; /* 왼쪽 위 모서리 둥글게 */
+  border-top-right-radius: 10px; /* 오른쪽 위 모서리 둥글게 */
+  padding-left: 10px;
+}
+
+/* Password 입력 상자 */
+#userpassword {
+  border-bottom-left-radius: 10px; /* 왼쪽 아래 모서리 둥글게 */
+  border-bottom-right-radius: 10px; /* 오른쪽 아래 모서리 둥글게 */
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+/* 로그인 버튼 */
+#loginbutton {
+  width: 20%;
+  height: 40px;
+  border: 1px solid #232e52;
+  background-color: #232e52;
+  color: #fff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+/* -------------------------- */
+
+/* 추가 정보 (회원가입, 비밀번호 찾기 등)*/
+
+#formore {
+  display: flex;
+  gap: 20px; /* 여백 크기를 설정 */
+  justify-content: center; /* 부모 컨테이너의 중앙으로 정렬 */
+}
+#formore a {
+  display: inline-block; /* 링크가 블록처럼 동작하게 */
+  text-decoration: none;
+  color: #688fd0;
+  padding: 5px 10px; /* 패딩을 추가하여 클릭 영역을 확장 */
+  transition: background-color 0.5s ease; /* 배경색의 변화를 부드럽게 설정 */
+  background-color: transparent; /* 초기 배경색은 투명 */
+  border-radius: 5px; /* 선택적으로 둥근 모서리 설정 */
+}
+
+#formore a:hover {
+  background-color: #232e52; /* 마우스 올리면 배경색 변경 */
+}
+
+/* -------------------------- */
+
+footer {
+  border-top: #e6bd66 solid 3px;
+}

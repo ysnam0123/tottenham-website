@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+}
+/* ---------- 바디 ----------  */
+header {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background-color: #232e52;
+  height: 20px;
+  border-bottom: #688fd0 solid 1px;
+}
+
+header a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: small;
+}
+
+header a:hover {
+  color: #e6bd66;
+}
+#tottenham {
+  margin-right: auto; /* 요소를 왼쪽 끝으로 배치*/
+  font-size: large;
+  color: #d2d4d3;
+  font-weight: 500;
+}
+
+/* ---------- 네비게이션 ----------  */
+#logonav {
+  display: flex;
+  height: 40px;
+}
+
+#logo img {
+  height: 40px;
+  width: auto;
+}
+
+nav {
+  /* 내비게이션을 감싸는 코드 */
+  flex: 1;
+  margin-bottom: 1px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+nav ul {
+  display: flex; /* 가로로 배치*/
+  list-style: none; /* 기본 리스트 스타일 제거 */
+  padding: 0; /* 기본 패딩 제거 */
+  margin: 0; /* 기본 마진 제거 */
+  height: 100%;
+}
+
+nav li {
+  /* 항목 각각을 감싸는 역할  */
+  width: 25%;
+  text-align: center;
+  /* border: #688fd0 solid 1px; */
+}
+nav li:last-child {
+  border-right: 0;
+}
+
+nav a {
+  /* 링크에 대한 역할  */
+  text-decoration: none;
+  color: #67686a;
+  line-height: 40px;
+  display: block;
+}
+
+nav a:hover {
+  background-color: #d2d4d3;
+  transition: 0.7s ease;
+  border-radius: 15px;
+  color: #232e52;
+}
+/* ---------- 메인 사진 ----------  */
+#mainphoto {
+  height: 300px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+/* ---------- 섹션 (사이드바) ----------  */
+
+section {
+  height: 900px;
+  border-top: #67686a solid 3px;
+  display: flex;
+}
+aside {
+  float: left;
+  border-right: #67686a solid 3px;
+  padding-right: 15px;
+  width: 13%;
+}
+aside a {
+  text-decoration: none;
+}
+#chelsea {
+  color: #0435d5;
+}
+#arsernal {
+  color: #000000;
+}
+#manutd {
+  color: #e40707;
+}
+article {
+  padding: 15px;
+  width: 60%;
+  border-right: solid 3px #232e52;
+}
+article img {
+  padding-top: 10px;
+  height: auto;
+  width: 60%;
+}
+.ad {
+  background-color: #232e52;
+  padding: 10px;
+  flex: 1;
+  color: white;
+}
+/* ---------- 푸터 ----------  */
+footer {
+  border-top: #e6bd66 solid 3px;
+  height: 300px;
+  padding: 15px;
+}
+
+/* ---------- 미디어쿼리 ----------  */
+@media (max-width: 600px) {
+  body {
+    background-color: #67686a;
+  }
+  #logo {
+    display: none;
+  }
+  nav li {
+    background-color: #ffff;
+  }
+  nav a {
+    color: black;
+  }
+  #mainphoto {
+    order: 1;
+    width: 100%;
+  }
+  article {
+    order: 2;
+    width: 100%;
+  }
+  aside {
+    order: 3;
+    width: 100%;
+  }
+  /* section 내의 요소들을 세로로 배치 */
+  section {
+    display: flex;
+    flex-direction: column; /* 세로로 배치 */
+  }
+}
