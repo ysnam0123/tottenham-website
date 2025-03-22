@@ -4,33 +4,42 @@ body {
 /* ---------- 바디 ----------  */
 header {
   display: flex;
+  align-items: center;
   gap: 10px;
   padding: 10px;
-  background-color: #232e52;
+  background-color: #1b2441;
   height: 20px;
   border-bottom: #688fd0 solid 1px;
+  position: relative;
 }
 
 header a {
   text-decoration: none;
   color: #ffff;
-  font-size: small;
 }
 
 header a:hover {
   color: #e6bd66;
 }
-#tottenham {
-  margin-right: auto; /* 요소를 왼쪽 끝으로 배치*/
-  font-size: large;
+
+#tottenham a{
+  font-size: 20px;
   color: #d2d4d3;
   font-weight: 500;
 }
-
+.minibox{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-left: auto;
+  font-size: 13px;
+}
 /* ---------- 네비게이션 ----------  */
 #logonav {
+  height: 60px;
+  width: 100%;
+  background-color: #d2d4d3;
   display: flex;
-  height: 40px;
 }
 
 #logo img {
@@ -39,98 +48,219 @@ header a:hover {
 }
 
 nav {
-  /* 내비게이션을 감싸는 코드 */
-  flex: 1;
-  margin-bottom: 1px;
-  margin-left: 30%;
-  margin-right: 30%;
+
 }
 
 nav ul {
   display: flex; /* 가로로 배치*/
+  align-items: center;
   list-style: none; /* 기본 리스트 스타일 제거 */
-  padding: 0; /* 기본 패딩 제거 */
-  margin: 0; /* 기본 마진 제거 */
+  margin: 0;
   height: 100%;
 }
 
 nav li {
-  /* 항목 각각을 감싸는 역할  */
-  width: 25%;
+  margin: 0;
   text-align: center;
-  /* border: #688fd0 solid 1px; */
-}
-nav li:last-child {
-  border-right: 0;
+  padding: 5px 10px;
+  font-weight: 800;
+  font-size: 18px;
+  transition: 0.3s ease;
 }
 
+nav li a:hover {
+  background-color: #d2d4d3;
+  color: #688fd0;
+}
+nav li:hover{
+  border-bottom: 5px solid #688fd0;
+}
 nav a {
   /* 링크에 대한 역할  */
   text-decoration: none;
-  color: #67686a;
+  color: #151b31;
   line-height: 40px;
   display: block;
+  transition: 0.5s ease;
 }
 
-nav a:hover {
-  background-color: #d2d4d3;
-  transition: 0.7s ease;
-  border-radius: 15px;
-  color: #232e52;
-}
 /* ---------- 메인 사진 ----------  */
-#mainphoto {
-  height: 300px;
-  margin-top: 5px;
-  width: 100%;
-}
-
-/* ---------- 섹션 (사이드바) ----------  */
-
-section {
-  height: 900px;
-  border-top: #67686a solid 3px;
+.mainPhotoDiv{
   display: flex;
+  justify-content: center;
+  background-color: #151b31;
+  position: relative;
+
 }
-aside {
-  float: left;
-  border-right: #67686a solid 3px;
-  padding-right: 15px;
-  width: 13%;
+#mainphoto {
+  height: 600px;
+  width: 1200px;
 }
-aside a {
-  text-decoration: none;
+.mainPhotoDiv h1{
+  user-select: none;
+  background-color: #151b31;
+  padding: 0px 10px;
+  color: #fff;
+  position: absolute;
+  font-size: 100px;
+  font-weight: 900;
+  bottom: -67px;
+  right: 150px;
 }
-#chelsea {
-  color: #0435d5;
+.line2{
+  margin-left: 160px;
 }
-#arsernal {
-  color: #000000;
+/* ---------- 섹션 (사이드바) ----------  */
+section{
+  min-height: 1000px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px 20px;
+
 }
-#manutd {
-  color: #e40707;
+.uniformZone{
+  border: 3px solid #000532;
+  width: 400px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
 }
-article {
-  padding: 15px;
-  width: 60%;
-  border-right: solid 3px #232e52;
+.watching{
+  display: flex;
+  justify-content: center;
+  height: 300px;
 }
-article img {
-  padding-top: 10px;
-  height: auto;
-  width: 60%;
+.uniformChangeButton{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin: 10px 0px;
 }
-.ad {
-  background-color: #232e52;
-  padding: 10px;
-  flex: 1;
-  color: white;
+
+.uniformChangeButton > img{
+  cursor: pointer;
+  width: 40px;
+  border: #d2d4d3 solid 3px;
+  transition: 0.3s ease;
 }
+.uniformChangeButton > img:hover{
+  transform: scale(1.2);
+}
+.uniformChangeButton > img:active{
+  transform: translateY(1px);
+}
+.uniform{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+.arrow{
+  height: 60px;
+  cursor: pointer;
+}
+
+/* 경기 결과 */
+#matchResult{
+  height: 1000px;
+  border: 2px solid #000532;
+  padding: 5px 10px;
+}
+.matchResultTitle{
+  background: rgb(184,199,222);
+  background: linear-gradient(90deg, rgba(184,199,222,1) 1%, rgba(111,147,192,0.9472163865546218) 23%, rgba(102,136,194,1) 100%);
+  height: 60px;
+  padding: 10px 15px;
+  color:#23224c;
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.match{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  width: 650px;
+  height: 110px;
+  flex-wrap: wrap;
+}
+.score{
+  display: flex;
+  align-items: center;
+  height: 60%;
+  margin: 0 20px;
+}
+.team{
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homeTeam{
+  border: red 2px solid;
+
+}
+.awayTeam{
+  border: blue 2px solid
+
+}
+.teamName{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.teamLogo{
+  width: 30px;
+  height: 30px;
+  
+}
+.matchInfo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column
+}
+
+
+
 /* ---------- 푸터 ----------  */
 footer {
-  border-top: #e6bd66 solid 3px;
+  margin: 0;
+  padding: 0;
+  border-top: #e6bd66 solid 10px;
   height: 300px;
-  padding: 15px;
+}
+.footerImg{
+  width: 100%;
+}
+.footerLinks ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.footerLinks ul li{
+  list-style: none;
+
+}
+.footerLinks ul li a{
+  text-decoration: none;
+
+}
+.footerLinks ul li img{
+  width: 50px;
+}
+.aboutMe{
+  height: 300px;
+  background-color: #000532;
+  color: #fff;
 }
 
 /* ---------- 미디어쿼리 ----------  */

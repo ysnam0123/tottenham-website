@@ -9,12 +9,14 @@
   <body>
     <header>
       <div id="tottenham"><a href="page.html">Spurs</a></div>
+      <div class="minibox">
       <div id="login">
         <a href="login.html">로그인</a>
       </div>
       <div id="language">
         <a href="#">language</a>
       </div>
+    </div>
     </header>
     <div id="logonav">
       <!-- <div id="logo">
@@ -30,46 +32,82 @@
       </nav>
     </div>
 
-    <img id="mainphoto" src="./assets/images/stadium.png" />
+    <div class="mainPhotoDiv">
+      <h1><span class="line1">Tottenham</span> <br> <span class="line2">Hotspurs</span></h1>
+      <img id="mainphoto" src="./assets/images/mainImg.jpg" />
+    </div>
     <main>
       <section>
-        <aside>
-          <ul>
-            <li><a href="#" id="chelsea">첼시</a></li>
-            <li><a href="#" id="arsernal">아스날</a></li>
-            <li><a href="#" id="manutd">맨체스터 유나이티드</a></li>
-          </ul>
-        </aside>
+        <!-- 유니폼 둘러보기 -->
+        <div class="uniformZone">
+          <h2>유니폼 둘러보기</h2>
+          <div class="uniform">
+            <img src="./assets/images/leftBtn.png" alt="leftBtn" class="leftBtn arrow">
+            <img src="./assets/images/home.jpg" alt="homeUniform" class="watching">
+            <img src="./assets/images/rightBtn.png" alt="rightBtn" class="rightBtn arrow">
+          </div>
+          <div class="uniformChangeButton">
+          <img src="./assets/images/home.jpg" alt="homeUniform" class="home chageUniform">
+          <img src="./assets/images/away.jpg" alt="awayUniform" class="away chageUniform">
+          <img src="./assets/images/third.jpg" alt="thirdUniform" class="third chageUniform">
+          </div>
+        </div>
 
-        <article>
-          이곳은 기사 구역입니다. <br />
-          <img src="./assets/images/son.png" /> <br />
-          <h2>손흥민 1년 재계약!</h2>
-          <p>
-            아름다운 이별을 준비하는 시간일까, 아니면 재계약을 위한 시간
-            벌기일까. 토트넘 홋스퍼에 애착이 깊은 손흥민(32)의 계약 문제는 팬들
-            사이에서도 중요한 화제다. 토트넘 팬들의 커뮤니티와 매체 사이의
-            성격이 강한 ‘스퍼스 웹’에선 19일 토트넘이 내년 계약이 만료되는
-            손흥민의 1년 계약 연장을 추진하는 것은 재계약 협상 시간을 벌기 위한
-            조치라는 주제가 큰 인기를 모았다. 토트넘이 내년 5월 계약이 만료되는
-            손흥민과 재계약 대신 2026년까지 1년 연장 옵션을 선택할 가능성이 높은
-            것은 이미 잘 알려진 사실이다. 잉글랜드 프리미어리그(EPL)에서 시장
-            논리에 가장 민감한 토트넘이 부상이 잦아진 손흥민에게 연봉 인상이
-            필요한 재계약을 제안하지 않는 것은 어쩌면 당연한 수순일지 모른다.
-            토트넘의 옵션 발동은 아름다운 이별을 준비하는 시간이 될 수 있다는
-            평가도 나왔다.
-          </p>
-        </article>
-        <div class="ad">ddd</div>
+      <!-- 최근 경기 결과 요약 -->
+      <div id="matchResult">
+        <div class="matchResultTitle">
+          <span>Match Result</span>
+        </div>
+        <div class="match">
+          <div class="homeTeam team">
+            <img src="./assets/images/teams/Tottenham.svg" alt="homeTeamLogo" class="homeTeamLogo teamLogo">
+            <div class="homeTeamName teamName">Tottenham</div>
+          </div>
+          <div class="score">1:0</div>
+          <div class="awayTeam team">
+            <img src="./assets/images/teams/ManchesterUnited.svg" alt="awayTeamLogo" class="awayTeamLogo teamLogo">
+            <div class="awayTeamName teamName">ManchesterUnited</div>
+          </div>
+          <div class="matchInfo">
+          <div class="matchLocation">
+            🏟 Tottenham Hotspur Stadium
+          </div>
+          <div class="matchDate">
+            2025.03.21
+          </div>
+        </div>
+        </div>
+
+      </div>
+
+      <!-- 순위표 -->
+       <div class="ranking">
+        순위표
+
+       </div>
+
       </section>
     </main>
     <footer>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+      <img src="./assets/images/footerImage.png" alt="footerImage" class="footerImg">
+      <div class="footerLinks">
+        <ul>
+          <li><a href="https://ask.tottenhamhotspur.com/hc/en-us?_gl=1*1yhsbn6*_gcl_au*MTQwMDA2Njg0OS4xNzQyNDMyMDc4*_ga*NzU2MjkyNzcxLjE3NDI0MzIwNzI.*_ga_75QKF6HR92*MTc0MjQzMjA3MC4xLjEuMTc0MjQzNjQzNi4wLjAuMA.." target="_blank"><img src="./assets/images/askSpurs.png" alt="askSpurs"></a></li>
+          <li><a href="https://www.facebook.com/TottenhamHotspur/" target="_blank"><img src="./assets/images/facebook.png" alt="facebook"></a></li>
+          <li><a href="https://www.instagram.com/spursofficial/" target="_blank"><img src="./assets/images/instagram.png" alt="instagram"></a></li>
+          <li><a href="https://x.com/SpursOfficial"><img src="./assets/images/x.png" alt="x"></a></li>
+          <li><a href="https://www.youtube.com/user/spursofficial" target="_blank"><img src="/assets/images/youtube.png" alt="youtube"></a></li>
+          <li><a href="https://www.snapchat.com/add/spursofficial" target="_blank"><img src="./assets/images/snapchat.png" alt="snapchat"></a></li>
+          <li><a href="https://tv.naver.com/spurstv" target="_blank"><img src="./assets/images/naver.png" alt="naver"></a></li>
+          <li><a href="https://www.twitch.tv/tottenhamhotspur" target="_blank"><img src="./assets/images/twitch.png" alt="twitch"></a></li>
+        </ul>
+      </div>
+      <div class="aboutMe">
+        about me
+      </div>
     </footer>
   </body>
+  <script src="./assets/js/matchResult.js"></script>
+  <script src="./assets/js/page.js"></script>
+  <!-- <script src="./assets/js/"></script> -->
 </html>
